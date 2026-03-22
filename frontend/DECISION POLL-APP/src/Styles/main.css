@@ -1,0 +1,136 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+}
+
+/* Container */
+.app {
+  max-width: 750px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a47a3;
+  font-weight: 700;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4a47a3, #6c63ff);
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Disabled button */
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Poll Card */
+.poll {
+  background: #ffffff;
+  padding: 18px;
+  margin-top: 18px;
+  border-radius: 12px;
+  border-left: 6px solid #6c63ff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.poll:hover {
+  transform: translateY(-3px);
+}
+
+/* Status */
+.active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.expired {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* Progress bar */
+.progress {
+  height: 6px;
+  background: #eee;
+  border-radius: 5px;
+  margin: 5px 0 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(135deg, #4a47a3, #6c63ff);
+  border-radius: 5px;
+}
+
+/* Winner */
+.winner {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+/* Highlight winner button */
+.winner-btn {
+  background: linear-gradient(135deg, #28a745, #4caf50) !important;
+}
+
+/* Filter */
+.filter {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.filter button {
+  margin: 0 5px;
+}
